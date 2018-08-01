@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Home</title>
+        <!-- for-mobile-apps -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="" />
+        <script type="application/x-javascript">
+            addEventListener("load", function() {
+                setTimeout(hideURLbar, 0);
+            }, false);
+
+            function hideURLbar() {
+                window.scrollTo(0, 1);
+            }
+        </script>
+        <!-- //for-mobile-apps -->
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/website.css" rel="stylesheet" type="text/css" media="all" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+        <!-- js -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/language.js"></script>
+        <!-- //js -->
+        <script type="text/javascript" src="js/jquery.iconmenu.js"></script>
+        <script type="text/javascript" src="js/lang_lib.js"></script>   
+        <script src="js/classie.js"></script>
+        <script type="text/javascript">
+            $(function() {
+                $('#sti-menu').iconmenu();
+                
+            });
+            var strLang = sessionStorage.getItem("language");
+            var lang_value;
+            if(null == strLang){
+                lang_value = 0;
+            }else{
+                lang_value = Number.parseInt(strLang);
+            }
+        </script>
+        <!-- fonts -->
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>
+        <!-- //fonts -->
+        <!-- start-smoth-scrolling -->
+        <script type="text/javascript" src="js/move-top.js"></script>
+        <script type="text/javascript" src="js/easing.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                $(".scroll").click(function(event) {
+                    event.preventDefault();
+                    $('html,body').animate({
+                        scrollTop: $(this.hash).offset().top
+                    }, 1000);
+                });
+            });
+        </script>
+        <!-- start-smoth-scrolling -->
+    </head>
+
+    <body>
+        <!-- banner -->
+        <div class="banner">
+            <div id="id_header" class="header">
+            
+            </div>
+
+            <div class="banner-text">
+                <div class="container">
+                    <script src="js/responsiveslides.min.js"></script>
+                    <script>
+                        $(function() {
+                            $("#slider3").responsiveSlides({
+                                auto: true,
+                                nav: true,
+                                speed: 500,
+                                namespace: "callbacks",
+                                pager: false,
+                            });
+                        });
+                    </script>
+                    <div class="callbacks_container">
+                        <ul class="rslides" id="slider3">
+                            <li>
+                                <div class="banner-info">
+                                    <h3><script>document.write(lang_banner1[lang_value]);</script></h3>
+                                    <!--<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas </p>-->
+                                </div>
+                            </li>
+                            <li>
+                                <div class="banner-info">
+                                    <h3><script>document.write(lang_banner2[lang_value]);</script></h3>
+                                    <!--<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas </p>-->
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+        <!-- banner -->
+        <!-- banner-bottom -->
+        <div class="banner-bottom">
+            <div class="container">
+                <h3><script>document.write(lang_introduction_title[lang_value]);</script></h3>
+                <p><script>document.write(lang_introduction[lang_value]);</script></p>
+            </div>
+        </div>
+        <!-- //banner-bottom -->
+        <!-- content -->
+        <div class="content">
+            <div class="col-md-6 content-left">
+                <h3><script>document.write(lang_quality_introduction_title[lang_value]);</script></h3>
+                <p><script>document.write(lang_quality_introduction[lang_value]);</script></p>
+            </div>
+            <div class="col-md-6 content-right">
+                <img class="img-responsive" src="images/pic11.png" alt=" " />
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <!-- //content -->
+        
+        <!-- content bottom -->
+        <!--<div class="content-bottom">
+            <h3>What We Do</h3>
+            <div class="container">
+                <div class="col-md-6 bottom-left text-center">
+                    <ul id="sti-menu" class="sti-menu">
+                        <li data-hovercolor="#fff">
+                            <a href="#">
+                                <h4 data-type="mText" class="sti-item">PERFORMANCE</h4>
+                                <p data-type="sText" class="sti-item">Voluptatem quia voluptas</p>
+                                <span data-type="icon" class="sti-icon sti-icon-care sti-item"></span>
+                            </a>
+                        </li>
+                        <li data-hovercolor="#fff">
+                            <a href="#">
+                                <h4 data-type="mText" class="sti-item">INNOVATIONS</h4>
+                                <p data-type="sText" class="sti-item">Voluptatem quia voluptas</p>
+                                <span data-type="icon" class="sti-icon sti-icon-alternative sti-item"></span>
+                            </a>
+                        </li>
+                        <li data-hovercolor="#fff">
+                            <a href="#">
+                                <h4 data-type="mText" class="sti-item">RESEARCH</h4>
+                                <p data-type="sText" class="sti-item">Voluptatem quia voluptas</p>
+                                <span data-type="icon" class="sti-icon sti-icon-family sti-item"></span>
+                            </a>
+                        </li>
+                        <li data-hovercolor="#fff">
+                            <a href="#">
+                                <h4 data-type="mText" class="sti-item">TECHNOLOGIES</h4>
+                                <p data-type="sText" class="sti-item">Voluptatem quia voluptas</p>
+                                <span data-type="icon" class="sti-icon sti-icon-info sti-item"></span>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col-md-6 bottom-right  grid">
+                    <figure class="effect-moses">
+                        <img src="images/pic1.jpg" alt="" />
+                        <figcaption>
+                            <h4>DESMONT</h4>
+                            <p>voluptatem quia voluptas sit.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>-->
+        <!-- //content bottom -->
+        <!-- quote -->
+        <!--<div class="quote">
+            <div class="container">
+                <div class="quote-left">
+                    <h3>Want to get some more information about our services</h3>
+                    <p>Seligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
+                </div>
+                <a href="#" class="hvr-outline-out button-left">GET A QUOTE</a>
+                <div class="clearfix"></div>
+            </div>
+        </div>-->
+        <!-- //quote -->
+        <!-- creative -->
+        <div class="creative">
+            <div class="container">
+                <h3><script>document.write(lang_quality_title[lang_value]);</script></h3>
+                <div class="col-md-6 creative-left">
+                    <img class="img-responsive" src="images/timg.jpg" alt=" " />
+                </div>
+                <div class="col-md-6 creative-right">
+                    <img class="img-responsive" src="images/timg.jpg" alt=" " />
+                </div>
+                <div class="col-md-6 creative-left">
+                    <img class="img-responsive" src="images/timg.jpg" alt=" " />
+                </div>
+                <div class="col-md-6 creative-right">
+                    <img class="img-responsive" src="images/timg.jpg" alt=" " />
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- //creative -->
+        <!-- footer-top -->
+        <div id="id_footer" class="footer-top">
+            
+        </div>
+        <!-- //footer-top -->
+        <!-- for bootstrap working -->
+        <script src="js/bootstrap.js"></script>
+        <!-- //for bootstrap working -->
+        <!-- smooth scrolling -->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                /*
+                	var defaults = {
+                	containerID: 'toTop', // fading element id
+                	containerHoverID: 'toTopHover', // fading element hover id
+                	scrollSpeed: 1200,
+                	easingType: 'linear' 
+                	};
+                */
+                $().UItoTop({
+                    easingType: 'easeOutQuart'
+                });
+            });
+        </script>
+     <script>
+      $("#id_header").load("header.html");
+      $("#id_footer").load("footer.html",function(){
+      	$("#id_nav_index").text(lang_title[lang_value]);
+      	$("#id_nav_about").text(lang_about[lang_value]);
+      	$("#id_nav_product").text(lang_products[lang_value]);
+      	$("#id_nav_certificate").text(lang_certificates[lang_value]);
+      	$("#id_nav_contact").text(lang_contact[lang_value]);
+        $("#id_nav_index").addClass("active");
+      	
+      	 $("#id_change_ch").click(function(){
+            translateToChinese();
+        })
+        $("#id_change_en").click(function(){
+            translateToEnglish();
+        })
+      });
+    </script>
+    
+        <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+        <!-- //smooth scrolling -->
+
+    </body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+<link href="css/website.css" rel="stylesheet" type="text/css" media="all" />
+
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+
+<script type="text/javascript" src="js/language.js"></script>
+
+<script type="text/javascript" src="js/jquery.iconmenu.js"></script>
+<script type="text/javascript" src="js/lang_lib.js"></script>
+
+<script type="text/javascript">
+            $(function() {
+                $('#sti-menu').iconmenu();
+                
+            });
+            var strLang = sessionStorage.getItem("language");
+            var lang_value;
+            if(null == strLang){
+                lang_value = 0;
+            }else{
+                lang_value = Number.parseInt(strLang);
+            }
+        </script>
+        
+<!-- //js -->
+<!-- fonts -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>
+<!-- //fonts -->
+	<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- start-smoth-scrolling -->
+</head>
+<body>
+<!-- banner -->
+	<div class="banner pagehead">
+		 <div id="id_header" class="header">
+            
+            </div>
+	</div>
+<!-- contact -->
+<div class="about">
+	<div class="container">
+		<h3 class="tittle"><script>document.write(lang_contact[lang_value]);</script></h3>
+		<div class="map col-md-7" >
+			<!--<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d2482.432383990807!2d0.028213999961443994!3d51.52362882484525!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1423469959819"></iframe>
+		-->
+		<iframe src="baidu_map.html" frameBorder=0 height=800 width=600 scrolling=no></iframe> 
+		</div>
+		<div class="class_contant_list col-md-5">
+			<p><script>document.write(lang_contant_company_name[lang_value]);</script></p>
+			<p><script>document.write(lang_contant_address[lang_value]);</script></p>
+			<p><script>document.write(lang_contant_admin[lang_value]);</script></p>
+			<p><script>document.write(lang_contant_phone[lang_value]);</script></p>
+			<p><script>document.write(lang_contant_email[lang_value]);</script></p>
+		</div>
+
+	</div>
+</div>
+<!-- //contact -->
+<!-- footer-top -->
+<div id="id_footer" class="footer-top">
+            
+        </div>
+<!-- //footer-top -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	 <script>
+      $("#id_header").load("header.html");
+      $("#id_footer").load("footer.html",function(){
+      	$("#id_nav_index").text(lang_title[lang_value]);
+      	$("#id_nav_about").text(lang_about[lang_value]);
+      	$("#id_nav_product").text(lang_products[lang_value]);
+      	$("#id_nav_certificate").text(lang_certificates[lang_value]);
+      	$("#id_nav_contact").text(lang_contact[lang_value]);
+      	 $("#id_change_ch").click(function(){
+            translateToChinese();
+        })
+        $("#id_change_en").click(function(){
+            translateToEnglish();
+        })
+        $("#id_nav_contact").addClass("active");
+      });
+    </script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+
+</body>
+</html>

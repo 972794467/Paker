@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/ihover.css" rel="stylesheet" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+<link href="css/website.css" rel="stylesheet" type="text/css" media="all" />
+
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/language.js"></script>
+
+<script type="text/javascript" src="js/jquery.iconmenu.js"></script>
+<script type="text/javascript" src="js/lang_lib.js"></script>   
+<!-- //js -->
+<!-- fonts -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>
+<!-- //fonts -->
+	<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		<script type="text/javascript">
+            $(function() {
+                $('#sti-menu').iconmenu();
+                
+            });
+            var strLang = sessionStorage.getItem("language");
+            var lang_value;
+            if(null == strLang){
+                lang_value = 0;
+            }else{
+                lang_value = Number.parseInt(strLang);
+            }
+        </script>
+	<!-- start-smoth-scrolling -->
+</head>
+<body>
+<!-- banner -->
+	<div class="banner pagehead">
+		 <div id="id_header" class="header">
+            
+            </div>
+	</div>
+<!-- about -->
+<div class="about">
+	<div class="container">
+		<h3 class="tittle"><script>document.write(lang_about[lang_value]);</script></h3>
+			<div class="col-md-5 about-grid-left text-center">
+				<img src="images/company_instrument.jpg" alt=""/>
+			</div>
+		<div class="col-md-7 about-grid">
+							<h4><script>document.write(lang_company_name[lang_value]);</script></h4>
+							<p><script>document.write(lang_introduction[lang_value]);</script></p>
+							<p><script>document.write(lang_quality_introduction[lang_value]);</script></p>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+<div class="team">
+	<div class="container">
+		<h3 class="tittle"><script>document.write(lang_instrument[lang_value]);</script></h3>
+			<div class="col-lg-3 col-md-5 text-center">
+				<div class="ih-item circle effect19"><a href="#">
+					<div class="img"><img src="images/instrument1.jpg" alt="img"></div>
+					<div class="info">
+					  <h3><script>document.write(lang_instrument1[lang_value]);</script></h3>
+					</div></a>
+				</div>
+			</div>
+			<div class="col-lg-3  col-md-5  text-center">
+				<div class="ih-item circle effect19"><a href="#">
+					<div class="img"><img src="images/instrument2.jpg" alt="img"></div>
+					<div class="info">
+					  <h3><script>document.write(lang_instrument2[lang_value]);</script></h3>
+					</div></a>
+				</div>
+			</div>
+			<div class="col-lg-3  col-md-5  text-center">
+				<div class="ih-item circle effect19"><a href="#">
+					<div class="img"><img src="images/instrument3.jpg" alt="img"></div>
+					<div class="info">
+					  <h3><script>document.write(lang_instrument3[lang_value]);</script></h3>
+					</div></a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-5   text-center">
+				<div class="ih-item circle effect19"><a href="#">
+					<div class="img"><img src="images/instrument4.jpg" alt="img"></div>
+					<div class="info">
+					  <h3><script>document.write(lang_instrument3[lang_value]);</script></h3>
+					</div></a>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+
+	</div>
+</div>
+<!-- //about -->
+<!-- footer-top -->
+<div id="id_footer" class="footer-top">
+            
+        </div>
+<!-- //footer-top -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+	 <script>
+      $("#id_header").load("header.html");
+      $("#id_footer").load("footer.html",function(){
+      	$("#id_nav_index").text(lang_title[lang_value]);
+      	$("#id_nav_about").text(lang_about[lang_value]);
+      	$("#id_nav_product").text(lang_products[lang_value]);
+      	$("#id_nav_certificate").text(lang_certificates[lang_value]);
+      	$("#id_nav_contact").text(lang_contact[lang_value]);
+      	 $("#id_change_ch").click(function(){
+            translateToChinese();
+        })
+        $("#id_change_en").click(function(){
+            translateToEnglish();
+        })
+        $("#id_nav_about").addClass("active");
+      });
+    </script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+
+</body>
+</html>

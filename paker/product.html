@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Product</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/swipebox.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link href="css/website.css" rel="stylesheet" type="text/css" media="all" />
+<!-- js -->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/language.js"></script>
+
+<script type="text/javascript" src="js/jquery.iconmenu.js"></script>
+<script type="text/javascript" src="js/lang_lib.js"></script>
+<script type="text/javascript" src="js/products_class.js"></script>
+<script type="text/javascript" src="js/products_list.js"></script>
+<script type="text/javascript">
+            $(function() {
+                $('#sti-menu').iconmenu();
+                
+            });
+            var strLang = sessionStorage.getItem("language");
+            var lang_value;
+            if(null == strLang){
+                lang_value = 0;
+            }else{
+                lang_value = Number.parseInt(strLang);
+            }
+        </script>
+        
+<!-- //js -->
+<!-- fonts -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>
+<!-- //fonts -->
+	<!-- start-smoth-scrolling -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+	<!-- start-smoth-scrolling -->
+<!-- swipe box js -->
+	<script src="js/jquery.swipebox.min.js"></script> 
+	    <script type="text/javascript">
+			jQuery(function($) {
+				$(".swipebox").swipebox();
+			});
+	</script>
+<!-- //swipe box js -->
+
+</head>
+<body>
+<!-- banner -->
+	<div class="banner pagehead">
+		 <div id="id_header" class="header">
+            
+            </div>
+	</div>
+<!-- gallery -->
+<div class="gallery">
+	<div class="container">
+		<h3 class="tittle"><script>document.write(lang_products[lang_value]);</script></h3>
+		
+		<ul id="id_products_tab" class="nav nav-tabs tabs">
+            <li id="id_ferrule_tab_title" class="active">
+                <a href="#id_ferrule_tab" data-toggle="tab"><script>document.write(lang_product_class_ferrule[lang_value]);</script></a>
+            </li>
+            <li id="id_metric_core_tab_title">
+                <a href="#id_metric_core_tab" data-toggle="tab" ><script>document.write(lang_product_class_metric_core[lang_value]);</script></a>
+            </li>
+            <li id="id_British_BSP_tab_title">
+                <a href="#id_British_BSP_tab" data-toggle="tab" ><script>document.write(lang_product_class_British_BSP[lang_value]);</script></a>
+            </li>
+            <li id="id_American_JIC_tab_title">
+                <a href="#id_American_JIC_tab" data-toggle="tab" ><script>document.write(lang_product_class_American_JIC[lang_value]);</script></a>
+            </li>
+            <li id="id_adapter_tab_title">
+                <a href="#id_adapter_tab" data-toggle="tab" ><script>document.write(lang_product_class_adapter[lang_value]);</script></a>
+            </li>
+            <li id="id_Hitachi_ORFS_tab_title">
+                <a href="#id_Hitachi_ORFS_tab" data-toggle="tab" ><script>document.write(lang_product_class_Hitachi_ORFS[lang_value]);</script></a>
+            </li>
+            <li id="id_flange_tab_title">
+                <a href="#id_flange_tab" data-toggle="tab" ><script>document.write(lang_product_class_flange[lang_value]);</script></a>
+            </li>
+             <li id="id_assembly_tab_title">
+                <a href="#id_assembly_tab" data-toggle="tab" ><script>document.write(lang_product_class_assembly[lang_value]);</script></a>
+            </li>
+             <li id="id_other_tab_title">
+                <a href="#id_other_tab" data-toggle="tab" ><script>document.write(lang_product_class_other[lang_value]);</script></a>
+            </li>
+        </ul>
+        
+        <div id="id_products_tab_content" class="tab-content">
+            <div id="id_ferrule_tab" class="tab-pane fade in active">
+                <br/>
+                <div id="id_ferrule_list">
+                </div>
+            </div>
+
+            <div id="id_metric_core_tab" class="tab-pane fade">
+                <br />
+                <div id="id_metric_core_list">
+                </div>
+            </div>
+            
+            <div id="id_British_BSP_tab" class="tab-pane fade">
+                <br />
+                <div id="id_British_BSP_list">
+                </div>
+            </div>
+            <div id="id_American_JIC_tab" class="tab-pane fade">
+                <br />
+                <div id="id_American_JIC_list">
+                </div>
+            </div>
+            <div id="id_adapter_tab" class="tab-pane fade">
+                <br />
+                <div id="id_adapter_list">
+                </div>
+            </div>
+            <div id="id_Hitachi_ORFS_tab" class="tab-pane fade">
+                <br />
+                <div id="id_Hitachi_ORFS_list">
+                </div>
+            </div>
+            <div id="id_flange_tab" class="tab-pane fade">
+                <br />
+                <div id="id_flange_list">
+                </div>
+            </div>
+            <div id="id_assembly_tab" class="tab-pane fade">
+                <br />
+                <div id="id_assembly_list">
+                </div>
+            </div>
+            <div id="id_other_tab" class="tab-pane fade">
+                <br />
+                <div id="id_other_list">
+                </div>
+            </div>
+        </div>
+				
+	</div>
+</div>
+<!-- //gallery -->
+<!-- footer-top -->
+<div class="footer-top">
+	<div id="id_footer" class="footer-top">
+            
+        </div>
+</div>
+<div>
+
+	<div class="modal fade" id="id_modal_product_detail" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content modal_content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+					<h4 class="modal-title"><script>document.write(lang_product_detail[lang_value]);</script></h4>
+				</div>
+				<div class="modal-body c_model_update_body">
+					<img id="id_modal_img" class="product_detail_img" onerror="getDetailError()"/>
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+			</div>
+			</div>
+
+		</div>
+	</div>
+
+</div>
+<!-- //footer-top -->
+<!-- for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+<!-- //for bootstrap working -->
+<!-- smooth scrolling -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+		/*
+			var defaults = {
+			containerID: 'toTop', // fading element id
+			containerHoverID: 'toTopHover', // fading element hover id
+			scrollSpeed: 1200,
+			easingType: 'linear' 
+			};
+		*/								
+		$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+		loadProducts();
+	</script>
+	<script>
+      $("#id_header").load("header.html");
+      $("#id_footer").load("footer.html",function(){
+      	$("#id_nav_index").text(lang_title[lang_value]);
+      	$("#id_nav_about").text(lang_about[lang_value]);
+      	$("#id_nav_product").text(lang_products[lang_value]);
+      	$("#id_nav_certificate").text(lang_certificates[lang_value]);
+      	$("#id_nav_contact").text(lang_contact[lang_value]);
+      	 $("#id_change_ch").click(function(){
+            translateToChinese();
+        })
+        $("#id_change_en").click(function(){
+            translateToEnglish();
+        })
+        $("#id_nav_product").addClass("active");
+      });
+    </script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<!-- //smooth scrolling -->
+
+</body>
+</html>
