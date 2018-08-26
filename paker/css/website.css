@@ -56,3 +56,17 @@
 .team{
 	margin-left: 20px;
 }
+
+.about_text p{
+	font-size: 16px;
+	color: black;
+}
+
+.contact_company_name{
+	font-size: 18px !important;
+}
+.index_img img{
+	width: 350px;
+	height: 350px;
+	margin-top: 30px;
+}

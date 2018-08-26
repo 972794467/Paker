@@ -14,21 +14,30 @@ var lang_introduction = ["Paker is a speciallized manufacturer for hydraulic pip
 var lang_quality_introduction_title = ["Our Quality Products ","高 质 量 产 品"];
 var lang_quality_introduction = ["With perfect quality management system and advanced design and superior structure,Products the factory producing are popular all over the world with high quality and reasonable price,Above all,the factory has passed the authentication of ISO9001:2008 Quality System.We hope to cooperate with all old and new customers.","凭借完善的质量管理体系，先进的设计和优越的结构，我司生产的产品畅销世界各地，质量上乘，价格合理。工厂产品已通过ISO9001：2008质量体系认证。我们希望所有新老客户精诚合作，共创未来。"];
 
+var lang_about_us_1 = ["Parker is an export-oriented enterprise that mainly develops, produces and sells Eaton and Parker standard products. The company specializes in producing Eaton and Parker standard hose joints. Hose assembly, sandblasting tube, oxygen lance, drilling tube, hydraulic cylinder, metal hose and various rubber nylon products. The product has the characteristics of high pressure, small bending radius, strong fatigue resistance and long service life. It is widely used in metallurgy, petroleum, engineering machinery, mining and various types of hydraulic machinery.","Parker公司是一家集研发、生产和销售伊顿及派克标准产品为主的出口型企业，本公司专业生产伊顿及派克标准软管接头。胶管总成、喷砂管、吹氧管、钻探管、液压缸、金属软管及各种橡胶尼龙制品。产品具有承受压力高、弯曲半径小、抗疲劳性能强、使用寿命长等特点，广泛应用于冶金、石油、工程机械、矿山采掘及各类液压机械。 "];
+var lang_about_us_2 = ["In recent years, with the continuous expansion of business, the company's products sell well throughout the country and are exported to Russia, Germany, Iran, Pakistan, Europe, America, Southeast Asia and other countries, and are trusted by domestic and foreign users.","近年来，随着业务的不断扩大，本公司产品畅销全国，并出口，俄罗斯、德国、伊朗，巴基斯坦，欧美东南亚等国家，深受国内外用户的信赖。"];
+var lang_about_us_3 = ["The company is based on integrity, innovation, and environmental protection. We are willing to work together with friends from all walks of life to meet your needs with excellent products and sincere service. We warmly welcome new and old customers at home and abroad to come and visit us and negotiate business!","本公司以诚信，创新，环保， 为宗旨。愿与各界朋友携手共进，以卓越的产品、诚信的服务满足您的需求，热忱欢迎国内外新老客户前来光临指导，洽谈业务！"];
+
 var lang_quality_title = ["High quality products, rich variety","优 质 的 产 品 ,丰 富 的 种 类"];
 
 var lang_instrument = ["instrument","我们的设备"];
 
 var lang_instrument1= ["CNC machine tool","数控机床"];
-var lang_instrument2= ["driller","钻孔机"];
-var lang_instrument3= ["Hydraulic Press","液压机"];
+var lang_instrument2= ["Vulcanizer","硫化机"];
+var lang_instrument3= ["Lock machine","锁管机"];
+var lang_instrument4= ["Salt spray testing machine","盐雾试验机"];
 
-var lang_contant_company_name = ["Company name : Hebei Parker Rubber Products Co., Ltd.","公司名&emsp; ： 河北帕克橡塑制品有限公司"];
-var lang_contant_address = ["Address : Jingxian County rubber and plastic management service base in Hengshui, Hebei","地址&emsp;&emsp; ： 河北省衡水市景县橡塑管业辅导基地"];
-var lang_contant_admin = ["Contacts : Mr. Zhang","联系人&emsp; ： 张先生"];
-var lang_contant_phone = ["Phone number : 13931835123","手机 &emsp;&emsp;： 13931835123"];
-var lang_contant_email = ["Email : 484515116151515651515611@163.com","联系邮箱 ： 484515116151515651515611@163.com"];
+var lang_contant_company_name = ["Hebei Parker Rubber Products Co., Ltd.","河 北 帕 克 橡 塑 制 品 有 限 公 司"];
+var lang_contant_telephone = ["Telephone: 0318-4239333","电&emsp;话&nbsp;： 0318-4239333"];
+var lang_contant_phone = ["Phone number : 13931835123","手&emsp;机&nbsp;： 13931835123 &nbsp;"];
+var lang_contant_phone2 = ["&emsp;&emsp;&nbsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&emsp;&nbsp;15100387566","&emsp;&emsp;&nbsp;&emsp;&emsp;&nbsp;15100387566"];	
+var lang_contant_qq = ["QQ number : 2511772380","Q&emsp;Q&nbsp;&nbsp;&nbsp;： 2511772380"];
+var lang_contant_email = ["Email : 2511772380@qq.com","邮&emsp;箱&nbsp;： 2511772380@qq.com"];
+var lang_contant_address = ["Address : Jingxian County rubber and plastic management service base in Hengshui, Hebei","地&emsp;址&nbsp;： 河北省衡水市景县橡塑管业辅导基地"];
+var lang_contant_admin = ["Contacts : Manager Zhang","联&emsp;系&nbsp;： 张经理"];
 
 var lang_business_license = ["Business License","营业执照"];
+var lang_business_license2 = ["Honors","所获荣誉"];
 
 var lang_product_detail = ["Detail","详细参数"];
 
