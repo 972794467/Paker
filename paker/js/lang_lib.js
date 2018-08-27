@@ -27,6 +27,15 @@ var lang_instrument2= ["Vulcanizer","硫化机"];
 var lang_instrument3= ["Lock machine","锁管机"];
 var lang_instrument4= ["Salt spray testing machine","盐雾试验机"];
 
+var lang_pro_class1 = ["Rubber hose joint","胶管接头"];
+var lang_pro_class2 = ["Hose Assembly","胶管总成"];
+var lang_pro_class3 = ["Wrapped hose","夹布胶管"];
+var lang_pro_class4 = ["Rubber products","橡胶制品"];
+var lang_pro_class5 = ["Nylon products","尼龙制品"];
+var lang_pro_class6 = ["Tetrafluorocarbon products","四氟制品"];
+var lang_pro_class7 = ["Polyurethane products","聚氨酯制品"];
+var lang_pro_class8 = ["Metal hose","金属软管"];
+
 var lang_contant_company_name = ["Hebei Paker Rubber Products Co., Ltd.","河 北 帕 克 橡 塑 制 品 有 限 公 司"];
 var lang_contant_telephone = ["Telephone: 0318-4239333","电&emsp;话&nbsp;： 0318-4239333"];
 var lang_contant_phone = ["Phone number : 13931835123","手&emsp;机&nbsp;： 13931835123 &nbsp;"];

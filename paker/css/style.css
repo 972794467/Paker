@@ -108,7 +108,7 @@ a.navbar-brand span {
 }
 .navbar-default .navbar-nav > li > a{
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
 }
 .navbar-nav > li > a {
   padding-top: 25px;
@@ -323,7 +323,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 .banner-info h3 {
 	font-family: 'Days One', sans-serif;
-    color: #fff;
+    color: #b2c6ff;
     font-size: 44px;
 	line-height:1.3em;
 }
@@ -688,7 +688,8 @@ padding:80px 0;
     margin-bottom: 17px;
 }
 .creative-left,.creative-right {
-    border-left: 2px solid #00B5B5;
+    border-left: 1.5px solid #00B5B5;
+    border-right: 1.5px solid #00B5B5;
     padding: 0 22px;
 }
 .creative-left p ,.creative-right p{
